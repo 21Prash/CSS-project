@@ -1,0 +1,12 @@
+.flexbox-conatiner {
+  display: flex;
+  align-items: center;
+}
+.mountain {
+  margin-top: -50%;
+}
+.transition,
+.stars,
+.layers {
+  margin-top: -1%;
+}
