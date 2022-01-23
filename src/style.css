@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flexbox-conatiner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.mountain,
+.transition,
+.stars,
+.layers,
+.footer {
+  margin-top: -1.5%;
+}
+.blend {
+  margin-top: -5%;
+}
+.blending {
+  max-width: 26.45%;
+  transform: rotate(180deg);
+}

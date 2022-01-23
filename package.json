@@ -1,0 +1,23 @@
+{
+  "name": "css-project",
+  "version": "1.0.0",
+  "description": "With curvy CSS styling to give an edgy look. Meant to be a one page portfolio. Future plans are to have multiple pages including sections.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/21Prash/CSS-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/21Prash/CSS-project/issues"
+  },
+  "homepage": "https://github.com/21Prash/CSS-project#readme",
+  "dependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}
