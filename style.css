@@ -3,10 +3,11 @@
   align-items: center;
 }
 .mountain {
-  margin-top: -50%;
+  margin-top: -90%;
 }
 .transition,
 .stars,
-.layers {
+.layers,
+.footer {
   margin-top: -1%;
 }
