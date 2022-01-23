@@ -9,3 +9,10 @@
 .footer {
   margin-top: -1.5%;
 }
+.blend {
+  margin-top: -5%;
+}
+.blending {
+  max-width: 26.45%;
+  transform: rotate(180deg);
+}
