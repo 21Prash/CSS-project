@@ -8,39 +8,41 @@
     <title>Document</title>
   </head>
   <body>
-    <svg
-      id="visual1"
-      width="100vw"
-      height="300vh"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      version="1.1"
-    >
-      <defs>
-        <filter id="blur1" x="-10%" y="-10%" width="150%" height="150%">
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="BackgroundImageFix"
-            result="shape"
-          ></feBlend>
-          <feGaussianBlur
-            stdDeviation="161"
-            result="effect1_foregroundBlur"
-          ></feGaussianBlur>
-        </filter>
-      </defs>
-      <rect width="100%" height="100%" fill="#4ecde9"></rect>
-      <g filter="url(#blur1)">
-        <circle cx="1250" cy="871" fill="#ee3b5b" r="357"></circle>
-        <circle cx="148" cy="288" fill="#4bddcb" r="657"></circle>
-        <circle cx="248" cy="114" fill="#ee3b5b" r="357"></circle>
-        <circle cx="923" cy="424" fill="#ee3b5b" r="357"></circle>
-        <circle cx="453" cy="594" fill="#4bddcb" r="357"></circle>
-        <circle cx="527" cy="174" fill="#ee3b5b" r="357"></circle>
-      </g>
-    </svg>
+    <div class="blur">
+      <svg
+        id="visual1"
+        width="100vw"
+        height="300vh"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        version="1.1"
+      >
+        <defs>
+          <filter id="blur1" x="-10%" y="-10%" width="150%" height="150%">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="BackgroundImageFix"
+              result="shape"
+            ></feBlend>
+            <feGaussianBlur
+              stdDeviation="161"
+              result="effect1_foregroundBlur"
+            ></feGaussianBlur>
+          </filter>
+        </defs>
+        <rect width="100%" height="100%" fill="#4ecde9"></rect>
+        <g filter="url(#blur1)">
+          <circle cx="1250" cy="871" fill="#ee3b5b" r="357"></circle>
+          <circle cx="148" cy="288" fill="#4bddcb" r="657"></circle>
+          <circle cx="248" cy="114" fill="#ee3b5b" r="357"></circle>
+          <circle cx="923" cy="424" fill="#ee3b5b" r="357"></circle>
+          <circle cx="453" cy="594" fill="#4bddcb" r="357"></circle>
+          <circle cx="527" cy="174" fill="#ee3b5b" r="357"></circle>
+        </g>
+      </svg>
+    </div>
     <div class="mountain">
       <svg
         id="visual2"
@@ -89,1982 +91,177 @@
     <div class="stars">
       <svg
         id="visual"
-        viewBox="0 0 2160 1440"
-        width="2160"
-        height="1440"
+        width="100vw"
+        height="100vh"
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
         version="1.1"
       >
-        <rect x="0" y="0" width="2160" height="1440" fill="#142240"></rect>
+        <rect x="0" y="0" width="100vw" height="100vh" fill="#142240"></rect>
         <g fill="rgba(218,222,191,0.5)">
           <path
             d="M0 -30.2L6.8 -9.3L28.7 -9.3L11 3.6L17.8 24.4L0 11.5L-17.8 24.4L-11 3.6L-28.7 -9.3L-6.8 -9.3Z"
-            transform="translate(1905 1137)"
+            transform="translate(407 446)"
           ></path>
           <path
             d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1614 40)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(61 197)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(401 295)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1973 89)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(379 455)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1515 492)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1403 635)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1626 773)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(122 853)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(957 1199)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(603 1248)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1362 240)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1133 72)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(2002 363)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1770 920)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(92 1249)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(1217 1375)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1163 693)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(400 1078)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(539 1055)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1448 400)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1524 1217)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(677 1137)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(269 354)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(1440 1371)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(668 810)"
+            transform="translate(735 240)"
           ></path>
           <path
             d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1765 1337)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(727 630)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(722 1391)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1017 624)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(623 1171)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1804 443)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(893 688)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(765 116)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(1294 415)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1225 619)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(600 708)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(168 1358)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1091 205)"
+            transform="translate(1002 1049)"
           ></path>
           <path
             d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(770 529)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(656 124)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1177 134)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(422 527)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(469 65)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1960 285)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1179 549)"
+            transform="translate(184 108)"
           ></path>
           <path
             d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1193 835)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(2008 575)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1165 232)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1973 871)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(729 242)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(1265 551)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1693 782)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(37 1139)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(2067 491)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(420 1308)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1470 821)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1351 171)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(848 418)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(598 1325)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1492 609)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(501 446)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(772 324)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1213 1273)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(109 382)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(939 429)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1690 1389)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(1299 1348)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(125 951)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(1877 931)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(2009 1095)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(175 1050)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(697 488)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1794 1212)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1839 1008)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(677 1019)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(353 1239)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(1680 615)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(290 1392)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(540 1187)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1515 1375)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1720 246)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(479 661)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(438 1227)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1842 255)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1977 1289)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(234 1172)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(2058 1338)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1708 1001)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1647 1054)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(550 33)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(319 513)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1430 44)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(1823 687)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(32 52)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(1085 557)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(2111 770)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(2024 654)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(189 83)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1568 364)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1485 1009)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(949 141)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(627 542)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1571 1135)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(124 448)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1668 478)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1000 253)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1199 1188)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(869 174)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1843 554)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(601 995)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1445 1174)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1703 1253)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1025 1107)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(841 1011)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(764 1274)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(241 965)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1715 534)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(344 1158)"
+            transform="translate(1263 1155)"
           ></path>
           <path
             d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(1383 1143)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(2027 817)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(132 1131)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(2017 441)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1914 665)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1102 270)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(2097 396)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(282 260)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(857 1327)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(854 1084)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1760 1127)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(2034 37)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(2073 869)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1673 1133)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1484 233)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1870 403)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(199 430)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(462 1140)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(1180 923)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(603 410)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(988 958)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1854 121)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1152 369)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1605 868)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(897 1248)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(894 326)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1045 324)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1783 105)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(514 291)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(2116 644)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1805 1406)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1626 304)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(1088 126)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1373 1251)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(707 425)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(932 884)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1454 558)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1676 349)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1138 1236)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(695 1308)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1218 730)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(986 775)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1519 412)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(275 138)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(333 810)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(697 897)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(956 718)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1337 520)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1292 1133)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1998 976)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(804 816)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(139 158)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(1960 802)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1541 935)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(2086 1054)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(846 1196)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1430 152)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(539 829)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1872 1228)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(145 531)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(148 292)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(363 706)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(2109 1222)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(286 606)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(984 1264)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1526 101)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(61 434)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(64 1024)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(769 1337)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(545 911)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(951 1339)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1108 449)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1708 1189)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1743 322)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1850 1325)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(63 714)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1704 932)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(1352 1390)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(1035 1187)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(359 881)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(451 138)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1327 756)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1226 1051)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1095 848)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(896 751)"
+            transform="translate(382 938)"
           ></path>
           <path
             d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(1485 316)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(632 41)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1108 773)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(1342 352)"
+            transform="translate(675 13)"
           ></path>
           <path
             d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1399 985)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(455 1043)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(818 590)"
+            transform="translate(178 1040)"
           ></path>
           <path
             d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(2073 988)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1489 1125)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1087 1017)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1374 868)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1960 1179)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(2122 211)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1111 652)"
+            transform="translate(1529 1434)"
           ></path>
           <path
             d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(823 733)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(536 537)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(961 354)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(254 897)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(2055 727)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(1957 1387)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(419 931)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(562 649)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1955 415)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(56 818)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(977 483)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(510 1378)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1381 697)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(2062 1173)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(139 737)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(451 782)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1300 982)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1892 796)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(165 639)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(1235 235)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(65 1378)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(194 238)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(236 1315)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(610 169)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(743 1126)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(343 45)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1604 549)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1831 350)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(683 1228)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(549 364)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1439 1249)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(1294 655)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(334 221)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(543 1295)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1751 179)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(488 728)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1127 1171)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(2124 1332)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1010 429)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(473 886)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(33 1212)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(346 1322)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(716 352)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(930 613)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(409 651)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1738 649)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(182 361)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(2104 50)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(356 1395)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(1914 992)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(122 45)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(888 942)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(312 402)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(1183 437)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1750 1050)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1617 1219)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(727 710)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(75 564)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1012 91)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(898 519)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1656 229)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(773 962)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1019 1320)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(218 745)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1250 480)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1972 492)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1282 143)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(170 1253)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1065 393)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(46 622)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1288 1243)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(2048 223)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(1770 811)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(1396 787)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1290 67)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1171 1002)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(631 1066)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1451 756)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1442 924)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(1348 455)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1141 1384)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1112 948)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(886 98)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1766 588)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1265 850)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(2034 161)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(51 125)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(377 114)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(275 1220)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(861 883)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(918 1085)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(646 255)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(2050 1268)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1551 268)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(1899 462)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(839 41)"
+            transform="translate(27 183)"
           ></path>
           <path
             d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(201 843)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(1586 1302)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(481 354)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1732 55)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(567 257)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(507 994)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(2127 472)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(740 1047)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(423 200)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(792 1408)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1662 412)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1659 123)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1133 1093)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1871 1406)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1703 860)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(378 584)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1611 983)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(530 98)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1918 575)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1852 619)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(667 677)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1311 909)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(334 992)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1913 332)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1238 964)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(1412 333)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1220 1120)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1005 866)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1812 1274)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(926 45)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1441 463)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1548 814)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(995 1044)"
+            transform="translate(52 1192)"
           ></path>
           <path
             d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1488 1299)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(1046 1387)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1587 214)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1815 51)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1207 311)"
+            transform="translate(1641 893)"
           ></path>
           <path
             d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(777 888)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(396 816)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1563 730)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(479 579)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1936 38)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1959 721)"
+            transform="translate(1690 182)"
           ></path>
           <path
             d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(628 334)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1033 169)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(614 871)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1761 392)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1292 308)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(183 922)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(1221 34)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1020 694)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(1939 203)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(2047 298)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(798 183)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(257 462)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(2099 561)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(822 278)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(683 183)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(246 1042)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(778 669)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(249 198)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(625 1387)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1655 676)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(340 340)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(305 675)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1776 732)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1607 1405)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1966 623)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(562 767)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(768 441)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1519 676)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(746 775)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(762 1210)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(225 542)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(648 607)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1510 175)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1349 1074)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1145 1312)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1255 782)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(1867 187)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1899 866)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(705 41)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(319 1056)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(570 1113)"
+            transform="translate(253 707)"
           ></path>
           <path
             d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(1407 1305)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(1781 503)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1587 625)"
+            transform="translate(1339 240)"
           ></path>
           <path
             d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1553 1029)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1656 1330)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(2110 1117)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(888 1389)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(630 472)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(975 563)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1049 924)"
-          ></path>
-          <path
-            d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(924 1007)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(1953 1051)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1298 237)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(882 818)"
+            transform="translate(727 1312)"
           ></path>
           <path
             d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1834 846)"
-          ></path>
-          <path
-            d="M0 -22.7L5.1 -7L21.5 -7L8.2 2.7L13.3 18.3L0 8.7L-13.3 18.3L-8.2 2.7L-21.5 -7L-5.1 -7Z"
-            transform="translate(618 935)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(45 299)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(275 59)"
-          ></path>
-          <path
-            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(45 942)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1276 1408)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(1376 99)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(227 1106)"
+            transform="translate(312 1264)"
           ></path>
           <path
             d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1593 486)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(1376 576)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1444 1076)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(768 52)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1734 449)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(593 106)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(1844 1113)"
-          ></path>
-          <path
-            d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(122 222)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(811 1139)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(913 1150)"
+            transform="translate(1517 1220)"
           ></path>
           <path
             d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(504 191)"
-          ></path>
-          <path
-            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
-            transform="translate(1920 1317)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(704 552)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(1780 270)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(824 485)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1252 367)"
-          ></path>
-          <path
-            d="M0 -25.5L5.7 -7.9L24.2 -7.9L9.3 3L15 20.6L0 9.7L-15 20.6L-9.3 3L-24.2 -7.9L-5.7 -7.9Z"
-            transform="translate(281 764)"
-          ></path>
-          <path
-            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
-            transform="translate(444 1390)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(228 302)"
-          ></path>
-          <path
-            d="M0 -8.5L1.9 -2.6L8.1 -2.6L3.1 1L5 6.9L0 3.2L-5 6.9L-3.1 1L-8.1 -2.6L-1.9 -2.6Z"
-            transform="translate(460 257)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(950 212)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(1041 487)"
-          ></path>
-          <path
-            d="M0 -1.9L0.4 -0.6L1.8 -0.6L0.7 0.2L1.1 1.5L0 0.7L-1.1 1.5L-0.7 0.2L-1.8 -0.6L-0.4 -0.6Z"
-            transform="translate(1588 124)"
-          ></path>
-          <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(2121 914)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(437 405)"
-          ></path>
-          <path
-            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
-            transform="translate(2112 120)"
-          ></path>
-          <path
-            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
-            transform="translate(1087 712)"
-          ></path>
-          <path
-            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
-            transform="translate(1868 731)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(240 678)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(1421 215)"
-          ></path>
-          <path
-            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
-            transform="translate(900 256)"
-          ></path>
-          <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1050 1249)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(98 659)"
-          ></path>
-          <path
-            d="M0 -13.2L3 -4.1L12.6 -4.1L4.8 1.6L7.8 10.7L0 5L-7.8 10.7L-4.8 1.6L-12.6 -4.1L-3 -4.1Z"
-            transform="translate(1340 1197)"
-          ></path>
-          <path
-            d="M0 -15.1L3.4 -4.7L14.4 -4.7L5.5 1.8L8.9 12.2L0 5.8L-8.9 12.2L-5.5 1.8L-14.4 -4.7L-3.4 -4.7Z"
-            transform="translate(1455 690)"
-          ></path>
-          <path
-            d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(1495 36)"
-          ></path>
-          <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(1507 881)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(106 1071)"
-          ></path>
-          <path
-            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
-            transform="translate(2125 1404)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(130 1197)"
+            transform="translate(589 745)"
           ></path>
           <path
             d="M0 -26.4L5.9 -8.2L25.1 -8.2L9.6 3.1L15.5 21.4L0 10.1L-15.5 21.4L-9.6 3.1L-25.1 -8.2L-5.9 -8.2Z"
-            transform="translate(988 32)"
+            transform="translate(1672 1028)"
           ></path>
           <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(561 474)"
+            d="M0 -20.8L4.7 -6.4L19.7 -6.4L7.5 2.5L12.2 16.8L0 7.9L-12.2 16.8L-7.5 2.5L-19.7 -6.4L-4.7 -6.4Z"
+            transform="translate(1017 941)"
           ></path>
           <path
-            d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(412 996)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(956 1404)"
-          ></path>
-          <path
-            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
-            transform="translate(49 1316)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(37 511)"
+            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
+            transform="translate(128 44)"
           ></path>
           <path
             d="M0 -17.9L4 -5.5L17.1 -5.5L6.5 2.1L10.5 14.5L0 6.8L-10.5 14.5L-6.5 2.1L-17.1 -5.5L-4 -5.5Z"
-            transform="translate(2112 315)"
+            transform="translate(550 872)"
+          ></path>
+          <path
+            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
+            transform="translate(812 294)"
+          ></path>
+          <path
+            d="M0 -12.3L2.8 -3.8L11.7 -3.8L4.5 1.4L7.2 9.9L0 4.7L-7.2 9.9L-4.5 1.4L-11.7 -3.8L-2.8 -3.8Z"
+            transform="translate(1690 807)"
           ></path>
           <path
             d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
-            transform="translate(1888 1061)"
+            transform="translate(1931 95)"
           ></path>
           <path
-            d="M0 -2.8L0.6 -0.9L2.7 -0.9L1 0.3L1.7 2.3L0 1.1L-1.7 2.3L-1 0.3L-2.7 -0.9L-0.6 -0.9Z"
-            transform="translate(2023 911)"
+            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
+            transform="translate(2144 1061)"
           ></path>
           <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(1068 52)"
+            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
+            transform="translate(1335 114)"
           ></path>
           <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(2020 1396)"
+            d="M0 -24.5L5.5 -7.6L23.3 -7.6L8.9 2.9L14.4 19.9L0 9.4L-14.4 19.9L-8.9 2.9L-23.3 -7.6L-5.5 -7.6Z"
+            transform="translate(579 187)"
           ></path>
           <path
-            d="M0 -17L3.8 -5.2L16.2 -5.2L6.2 2L10 13.7L0 6.5L-10 13.7L-6.2 2L-16.2 -5.2L-3.8 -5.2Z"
-            transform="translate(117 1312)"
+            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
+            transform="translate(826 763)"
           ></path>
           <path
             d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(1348 37)"
+            transform="translate(1229 385)"
           ></path>
           <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(288 1125)"
-          ></path>
-          <path
-            d="M0 -5.7L1.3 -1.7L5.4 -1.7L2.1 0.7L3.3 4.6L0 2.2L-3.3 4.6L-2.1 0.7L-5.4 -1.7L-1.3 -1.7Z"
-            transform="translate(207 145)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(219 1400)"
-          ></path>
-          <path
-            d="M0 -16L3.6 -5L15.3 -5L5.8 1.9L9.4 13L0 6.1L-9.4 13L-5.8 1.9L-15.3 -5L-3.6 -5Z"
-            transform="translate(291 1281)"
-          ></path>
-          <path
-            d="M0 -10.4L2.3 -3.2L9.9 -3.2L3.8 1.2L6.1 8.4L0 4L-6.1 8.4L-3.8 1.2L-9.9 -3.2L-2.3 -3.2Z"
-            transform="translate(1641 923)"
-          ></path>
-          <path
-            d="M0 -7.6L1.7 -2.3L7.2 -2.3L2.7 0.9L4.4 6.1L0 2.9L-4.4 6.1L-2.7 0.9L-7.2 -2.3L-1.7 -2.3Z"
-            transform="translate(1916 134)"
-          ></path>
-          <path
-            d="M0 -3.8L0.8 -1.2L3.6 -1.2L1.4 0.4L2.2 3.1L0 1.4L-2.2 3.1L-1.4 0.4L-3.6 -1.2L-0.8 -1.2Z"
-            transform="translate(729 843)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(656 745)"
-          ></path>
-          <path
-            d="M0 -6.6L1.5 -2L6.3 -2L2.4 0.8L3.9 5.3L0 2.5L-3.9 5.3L-2.4 0.8L-6.3 -2L-1.5 -2Z"
-            transform="translate(2125 833)"
+            d="M0 -21.7L4.9 -6.7L20.6 -6.7L7.9 2.6L12.8 17.6L0 8.3L-12.8 17.6L-7.9 2.6L-20.6 -6.7L-4.9 -6.7Z"
+            transform="translate(116 870)"
           ></path>
           <path
             d="M0 -0.9L0.2 -0.3L0.9 -0.3L0.3 0.1L0.6 0.8L0 0.4L-0.6 0.8L-0.3 0.1L-0.9 -0.3L-0.2 -0.3Z"
-            transform="translate(1705 718)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(1945 929)"
-          ></path>
-          <path
-            d="M0 -23.6L5.3 -7.3L22.4 -7.3L8.6 2.8L13.9 19.1L0 9L-13.9 19.1L-8.6 2.8L-22.4 -7.3L-5.3 -7.3Z"
-            transform="translate(269 833)"
-          ></path>
-          <path
-            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
-            transform="translate(36 368)"
-          ></path>
-          <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(2006 1223)"
+            transform="translate(1995 1002)"
           ></path>
           <path
             d="M0 -18.9L4.2 -5.8L18 -5.8L6.9 2.2L11.1 15.3L0 7.2L-11.1 15.3L-6.9 2.2L-18 -5.8L-4.2 -5.8Z"
-            transform="translate(837 352)"
+            transform="translate(1973 1063)"
           ></path>
           <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(411 36)"
+            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
+            transform="translate(1822 339)"
           ></path>
           <path
-            d="M0 -14.2L3.2 -4.4L13.5 -4.4L5.1 1.7L8.3 11.5L0 5.4L-8.3 11.5L-5.1 1.7L-13.5 -4.4L-3.2 -4.4Z"
-            transform="translate(844 649)"
+            d="M0 -19.8L4.4 -6.1L18.9 -6.1L7.2 2.3L11.7 16L0 7.6L-11.7 16L-7.2 2.3L-18.9 -6.1L-4.4 -6.1Z"
+            transform="translate(1464 625)"
+          ></path>
+          <path
+            d="M0 -11.3L2.5 -3.5L10.8 -3.5L4.1 1.3L6.7 9.2L0 4.3L-6.7 9.2L-4.1 1.3L-10.8 -3.5L-2.5 -3.5Z"
+            transform="translate(637 1109)"
+          ></path>
+          <path
+            d="M0 -4.7L1.1 -1.5L4.5 -1.5L1.7 0.6L2.8 3.8L0 1.8L-2.8 3.8L-1.7 0.6L-4.5 -1.5L-1.1 -1.5Z"
+            transform="translate(15 1023)"
+          ></path>
+          <path
+            d="M0 -28.3L6.4 -8.7L26.9 -8.7L10.3 3.3L16.6 22.9L0 10.8L-16.6 22.9L-10.3 3.3L-26.9 -8.7L-6.4 -8.7Z"
+            transform="translate(278 1340)"
+          ></path>
+          <path
+            d="M0 -9.4L2.1 -2.9L9 -2.9L3.4 1.1L5.5 7.6L0 3.6L-5.5 7.6L-3.4 1.1L-9 -2.9L-2.1 -2.9Z"
+            transform="translate(1887 49)"
+          ></path>
+          <path
+            d="M0 -27.4L6.1 -8.5L26 -8.5L9.9 3.2L16.1 22.1L0 10.5L-16.1 22.1L-9.9 3.2L-26 -8.5L-6.1 -8.5Z"
+            transform="translate(1077 1359)"
           ></path>
         </g>
       </svg>
