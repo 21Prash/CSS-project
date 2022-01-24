@@ -7,15 +7,23 @@
     <link href="/style.css" rel="stylesheet" />
     <title>Document</title>
   </head>
-  <body>
-    <div class="flex-container">
-      <div class="blur">
-        <img src="/png/blur.png" />
-
-        <section>
-          <p></p>
-        </section>
-      </div>
+  <body class="font-tut">
+    <div class="container flex items-center">
+      <header>
+        <nav class="container flex items-start">
+          <div class="blur">
+            <img src="/png/blur.png" alt="blur" />
+          </div>
+          <ul
+            class="hidden sm:flex flex-1 justify-end items-center gap-12 uppercase text-emerald-100"
+          >
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Blog</li>
+            <li class="cursor-pointer">Spoken Words</li>
+            <li class="cursor-pointer">Videos</li>
+          </ul>
+        </nav>
+      </header>
       <div class="blend">
         <img class="blending" src="/png/blending.png" />
       </div>
